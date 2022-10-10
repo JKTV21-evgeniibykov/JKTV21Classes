@@ -20,7 +20,7 @@ public class App {
         Console console = new Console();
         
         Book[] books = new Book[console.n()];   // create empty books array
-        books = console.add(books);             // imput items in books array
+        books = console.add(books.length);      // imput items in books array
         console.print(books);                   // print added books
         
     }

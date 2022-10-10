@@ -49,8 +49,8 @@ public class Book {
     @Override
     public String toString() {
         return "Book{" 
-                + "authors=" + Arrays.toString(authors) 
-                + ", title=" + title 
+                + "title=" + title 
+                + ", authors=" + Arrays.toString(authors) 
                 + '}';
     }
     

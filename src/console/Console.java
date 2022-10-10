@@ -19,10 +19,10 @@ public class Console {
         return n;
     }
     
-    public Book[] add(Book[] books) {
+    public Book[] add(int n) {
 
-        int n = books.length;
         String imput;
+        Book[] books = new Book[n];
         
         for (int i=0; i<n; i++) {
             System.out.print("\nTittle book No." + (i+1) + "? ");
