@@ -10,15 +10,18 @@ import tools.Tools;
  */
 public class Console {
 
-    public Console() {
-        
-        Scanner scanner = new Scanner(System.in);
-        Tools tools = new Tools();
+    Scanner scanner = new Scanner(System.in);
+    Tools tools = new Tools();
 
+    public int n() {
         System.out.print("What books create? ");
         int n = scanner.nextInt();
+        return n;
+    }
+    
+    public Book[] add(Book[] books) {
 
-        Book[] books = new Book[n];
+        int n = books.length;
         String imput;
         
         for (int i=0; i<n; i++) {
@@ -35,18 +38,14 @@ public class Console {
             books[i] = book;
         }
         
-        System.out.println("\nAdded books:");
+        return books;
+    }
+
+    public void print(Book[] books) {
+        System.out.println("\nBooks added:");
         for (int i=0; i<books.length; i++) {
             System.out.println(books[i].toString());
         }
-
-//        Tools tools = new Tools();
-//        Book book3 = new Book("New Book");
-//        book3.addAuthor(tools.createAuthor("New Author"));
-//        
-//        Book[] books = new Book[5];
-//        
-//        System.out.println(book3.toString());
     }
-    
+
 }

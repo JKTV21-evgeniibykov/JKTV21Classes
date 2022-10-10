@@ -1,7 +1,5 @@
 
 import console.Console;
-import tools.Tools;
-import myclasses.Author;
 import myclasses.Book;
 
 /*
@@ -17,34 +15,13 @@ import myclasses.Book;
 public class App {
     
     public void run() {
-
-        // Book 1
-//        Author author1 = new Author();
-//        author1.setName("God");
-//        Author[] authors1 = new Author[1];
-//        authors1[0] = author1;
-//        
-//        Book book1 = new Book();
-//        book1.setTitle("The Holy Bible");
-//        book1.setAuthors(authors1);
-//        
-//        System.out.println(book1.toString());
-        
-        // Book 2
-//        Author author2 = new Author();
-//        author2.setName("Author 1");
-//        Author author3 = new Author();
-//        author3.setName("Author 2");
-//        
-//        Book book2 = new Book();
-//        book2.setTitle("Book");
-//        book2.addAuthor(author2);
-//        book2.addAuthor(author3);
-//        
-//        System.out.println(book2.toString());
         
         // Add books
         Console console = new Console();
+        
+        Book[] books = new Book[console.n()];   // create empty books array
+        books = console.add(books);             // imput items in books array
+        console.print(books);                   // print added books
         
     }
     
